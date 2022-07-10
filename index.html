@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Hein Zarni Maung</title>
+</head>
+<nav class="menubar">
+    <div class="container">
+    <button class="hamburger">
+    <span></span> 
+    <span></span>
+    <span></span>
+    </button>
+
+    <a href="#home" class="headerbtn"><h1 class="name">Hein Zarni Maung</h1></a>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skill">Skill</a>
+        <a href="#experience">Experience</a>
+        <a href="#contactme">Contact Me</a>
+    </div>
+
+    
+</nav>
+</div>
+<!-- hamburger bar navigator -->
+<nav class="mobile-nav">
+    <a href="#home" class="mobo-nav-link">Home</a>
+    <a href="#aboutme" class="mobo-nav-link">About Me</a>
+    <a href="#education" class="mobo-nav-link">Education</a>
+    <a href="#skill" class="mobo-nav-link">Skill</a>
+    <a href="#experience" class="mobo-nav-link">Experience</a>
+    <a href="#contactme" class="mobo-nav-link">Contact Me</a>
+</nav>
+
+<body>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h2>Hello World!</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero consequatur ad voluptatem. Saepe expedita nemo ut! Minima est optio assumenda quisquam impedit dignissimos molestias eligendi, tenetur ipsum quasi quod dolore.
+            </p>
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <div class="abtcontainer">
+            <h1 class="titleabtme">About me</h1>
+            <p>
+                <br>
+            <div class="aboutme">
+                <div class="abtbox">
+                    <div class="imgbox">
+                    <img src="./images/me.jpg" class="myimg"></div>
+                    <p class="about-name">
+                    Name:<br>
+                    Hein Zarni Maung
+                    <br><br>
+                    Profile:<br>
+                    Full Stack developer
+                    <br><br>
+                    Email:<br>
+                    <button class="emailbtn" onclick="copyEvent('email')"><span id="email">tempcodeveloper@gmail.com</span></button> 
+                    <br><br>
+
+                    <script>
+                        function copyEvent(id)
+                        {
+                            var str = document.getElementById(id);
+                            window.getSelection().selectAllChildren(str);
+                            document.execCommand("Copy")
+                        }
+                    </script>
+
+                    Phone: <br>
+                    <a href="tel:+959421149852"> +95 9 421 149852</a>
+                    <br><br>
+                </p>
+                <div class="abtdetail">
+                <h5>About Me</h5>
+                
+                <p class="abtpara"><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid voluptatum quod sequi earum, veniam vel. Accusantium odit autem commodi iusto ducimus maxime laborum odio ipsa, excepturi error laudantium modi.
+                </p>
+                </div>
+
+                </div>
+            </div>
+            
+            </p>
+        </div>
+    </section>
+    
+    <section class="education" id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero consequatur ad voluptatem. Saepe expedita nemo ut! Minima est optio assumenda quisquam impedit dignissimos molestias eligendi, tenetur ipsum quasi quod dolore.
+            </p>
+        </div>
+    </section>
+
+    <section class="skill" id="skill">
+        <div class="content">
+            <h2>Skills</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero consequatur ad voluptatem. Saepe expedita nemo ut! Minima est optio assumenda quisquam impedit dignissimos molestias eligendi, tenetur ipsum quasi quod dolore.
+            </p>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="content">
+            <h2>Experience</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero consequatur ad voluptatem. Saepe expedita nemo ut! Minima est optio assumenda quisquam impedit dignissimos molestias eligendi, tenetur ipsum quasi quod dolore.
+            </p>
+        </div>
+    </section>
+    <section class="contactme" id="contactme">
+        <div class="content">
+            <h2>Contact Ms</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero consequatur ad voluptatem. Saepe expedita nemo ut! Minima est optio assumenda quisquam impedit dignissimos molestias eligendi, tenetur ipsum quasi quod dolore.
+            </p>
+        </div>
+    </section>
+
+
+<!-- hamburger bar script -->
+<script src="main.js"></script>
+<!-- scroll script -->
+
+<script 
+src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
+</script>
+
+<script>
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1200,
+    speedAsDuration: true
+    });
+
+</script>
+
+</body>
+
+  </html>
