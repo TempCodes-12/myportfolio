@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
 
 :root{
     --primary: #000080;
@@ -15,6 +16,31 @@
     font-family: 'Roboto', sans-serif;
   }
   
+  .contentcontainer {
+    display: block;
+    padding: 15px;
+    background-color: rgb(83, 81, 81);
+    width: 100%;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Rampart One';
+  }
+
+  .divider {
+    float: left;
+    width: 45%;
+    padding: 15px;
+    padding-left:70px;
+    padding-right: 70px;
+    margin: 15px;
+  }
+
   .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -206,29 +232,23 @@
     letter-spacing: 2px;
     transition: 0.5s;
   }
+  
 /* About Me */
-  
-  .abtcontainer {
-    padding: 0;
-  }
-  
+
   .aboutme {
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    padding: 0px;
   }
 
-  .titleabtme {
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Rampart One';
+  .abtcontainer {
+    display: block;
   }
 
   .abtbox {
     background-color: #FFF;
     display: flex;
     padding: 15px;
+    height: 360px;
+    margin-top: 30px;
   }
 
   .imgbox {
@@ -266,3 +286,66 @@
   .abtpara {
     font-size: 14px ;
   }
+
+  /* End of About Me */
+
+  /* Education */
+
+  .education {
+    padding: 0px;
+  }
+  .education .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin-top: 30px;
+  }
+  .education .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+    margin-bottom: 15px;
+  }
+  .education .resume-item h5 {
+    font-size: 14px;
+    color: white;
+    padding: 5px 25px;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .education .resume-item p {
+    font-size: 15px;
+    padding: 5px 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+  }
+  .education .resume-item ul {
+    padding-left: 20px;
+  }
+  .education .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .education .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .education .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #18d26e;
+    border: 2px solid #18d26e;
+  }
+
+    /* End of Education */
+
+  
