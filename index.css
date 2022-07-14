@@ -21,7 +21,6 @@
     padding: 15px;
     background-color: rgb(83, 81, 81);
     width: 100%;
-    height: 530px;
     justify-content: center;
     align-items: center;
   }
@@ -34,11 +33,10 @@
 
   .divider {
     float: left;
-    width: 45%;
-    padding: 15px;
-    padding-left:70px;
-    padding-right: 70px;
-    margin: 15px;
+    width: auto;
+    padding-left: 12.5%;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .container{
@@ -293,6 +291,9 @@
 
   .education {
     padding: 0px;
+  }
+  .educontainer {
+    display: flex;
   }
   .education .resume-item {
     padding: 0 0 20px 20px;
