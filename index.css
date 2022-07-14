@@ -247,6 +247,7 @@
     padding: 15px;
     height: 360px;
     margin-top: 30px;
+    border-radius: 30px;
   }
 
   .imgbox {
@@ -258,6 +259,7 @@
     width: 250px;
     height: 250px;
     padding: 15px;
+    border-radius: 20px;
   }
 
   .about-name {
